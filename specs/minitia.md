@@ -2,7 +2,7 @@
 
 ## Messages
 
-There are three categories of message in `x/rollup`` module.
+There are three categories of messages in `x/rollup`` module.
 
 * Bridge Executor messages
   * [`MsgCreateToken`](#msgcreatetoken)
