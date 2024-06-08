@@ -1,6 +1,6 @@
 # L2 Output Oracle
 
-In version 1, output oracle maintain `proposer` and `challenger` addresses on its config store. The `proposer` can submit the `output_proposal` and the `challenger` can delete the output when the proposed output state is wrong.
+In version 1, output oracle maintains `proposer` and `challenger` addresses on its config store. The `proposer` can submit the `output_proposal` and the `challenger` can delete the output when the proposed output state is wrong.
 
 The first version of the implementation does not include a dispute system, but uses permissioned propose and challenge mechanisms. In version 2, anyone can propose the output with a certain amount of `stake`, and disputes will be resolved based on the governance of L1.
 
@@ -25,8 +25,8 @@ A challenger can delete the output without dispute in version 1 with output inde
 
 ### Update Proposer
 
-The operation is to update proposer to another address when a proposer keeps submitting a invalid output root. The operation is supposed to be executed by `0x1` via L1 governance.
+The operation is to update the proposer to another address when a proposer keeps submitting an invalid output root. The operation is supposed to be executed by `0x1` via L1 governance.
 
 ### Update Challenger
 
-The operation is to update challenger to another address when a challenger keeps deleting a valid output root. The operation is supposed to be executed by `0x1` via L1 governance.
+The operation is to update the challenger to another address when a challenger keeps deleting a valid output root. The operation is supposed to be executed by `0x1` via L1 governance.
