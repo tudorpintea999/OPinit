@@ -24,13 +24,13 @@ To reduce gas costs, the batch inbox only exposes an empty function interface th
 
 The L2 output oracle is the component to store the L2 output root for block finalization. The users who withdraw the tokens from L2 to L1 also need to use this output root to prove the withdraw transaction is in the finalized L2 output root.
 
-The challenger always monitor the oracle output and do challenge when the output is different from the value computed from challenger side.
+The challenger always monitors the oracle output and do a challenge when the output is different from the value computed from the challenger side.
 
 ### L2 Components
 
 #### BridgeExecutor
 
-The bridge executor is the core component in minitia rollup, which is charge of following operations via [L2 Bridge Module](./specs/l2_bridge.md):
+The bridge executor is the core component in minitia rollup, which is charge of the following operations via [L2 Bridge Module](./specs/l2_bridge.md):
 
 * Finalize L1 deposit transaction to L2.
 * Construct withdraw tx storage Merkle Tree.
